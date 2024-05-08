@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Öğrenci Kayıt Formu</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body bgcolor="blue" >
+   <style type="text/css">
+     body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+   </style>
+  <h1>Öğrenci Kayıt Formu</h1>
+  <form action="insert.php" method="post">
+    <label for="ogr_ad">Ad:</label>
+    <input type="text" id="ogr_ad" name="ogr_ad" >
+
+    <label for="ogr_soyad">Soyad:</label>
+    <input type="text" id="ogr_soyad" name="ogr_soyad" >
+
+    <label for="ogr_no">Öğrenci No:</label>
+    <input type="text" id="ogr_no" name="ogr_no" >
+
+    <label for="ogr_sinif">Sınıf:</label>
+    <input type="text" id="ogr_sinif" name="ogr_sinif">
+
+    <label for="ogr_cinsiyet">Cinsiyet:</label>
+    <input type="text" id="ogr_cinsiyet" name="ogr_cinsiyet" >
+
+    <label for="ogr_alan">Alan:</label>
+    <input type="text" id="ogr_alan" name="ogr_alan" >
+
+    <label for="ogr_dtarih">Doğum Tarihi:</label>
+    <input type="date" id="ogr_dtarih" name="ogr_dtarih" >
+
+    <input type="submit" value="Kaydet">
+  </form>
+</body>
+</html>
